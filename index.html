@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather World 🍃</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="img/icons8-favicon-94.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""  />
+
+</head>
+
+<body>
+  <!--------------------------------header-------------------------------->
+  <header>
+    <nav>
+      <div class="nav-links" id="navLnks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="#current-weather">CURRNENT</a></li>
+          <li><a href="#weather-map">MAP</a></li>
+          
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="title">🌍<b>Weather</b> Forecast</h1>
+
+    <div class="user-interface">
+      <input type="text" id="location-input" placeholder="Enter location" />
+      <button id="search-button">Search</button>
+      <!-- <button onclick="darkMode()">DarkMood</button> -->
+
+    </div>
+
+  </header>
+  <!--------------------------------header END-------------------------------->
+
+  <!-----------------------------------Current Weather------------------------->
+  <section id="current-weather">
+    <h1 class="heders">Current Weather🍃</h1>
+    <div class="weather-card">
+      <div class="weather-icon">
+        <img class="weatherIcon1" id="weatherIcon" alt="Weather Icon" src="img/icons8-cloud-lightning-96.png" />
+      </div>
+      <div class="weather-info">
+        <h3 class="location name" id="location">Delhi</h3>
+        <p class="temperature temp_c">25°C</p>
+        <p class="description url">Cloudy</p>
+      </div>
+      <div class="timeLbl" id="local-time"></div>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="tblW">
+        <tr>
+          <td><strong class="locationPara">📍Location</strong></td>
+
+          <td><strong class="tempPara">🌡Temperature</strong></td>
+
+          <td><strong class="humidityPara">❄️Humidity</strong></td>
+
+          <td><strong class="windPara">🍃Wind Speed</strong></td>
+
+          <td><strong class="conditionPara">💧Condition</strong></td>
+
+          <td><strong class="regionPara">🎗Region</strong></td>
+
+          <td><strong class="countryPara">🗺 Country</strong></td>
+
+          <td><strong>longitude</strong></td>
+
+          <td><strong>latitude</strong></td>
+
+        </tr>
+        <tr>
+          <td><span class="tz_id">Asia/Delhi</span></td>
+          <td><span class="temp_c">25</span></td>
+          <td><span class="humidity">33</span></td>
+          <td><span class="wind_kph">75.22</span></td>
+          <td class="url">Cloudy</td>
+          <td><span class="region">North</span></td>
+          <td><span class="country">India</span></td>
+          <td><span id="lon">77.1025° E</span></td>
+          <td><span id="lat">28.7041° N</span></td>
+        </tr>
+
+      </table>
+    </div>
+  </section>
+
+
+  <section id="weather-map">
+    <h1 class="heders">Map</h1>
+    <div id="map" class="map-d">
+    </div>
+  </section>
+  <!--------------------------------------news cards------------------------------------------------->
+  
+
+  
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
