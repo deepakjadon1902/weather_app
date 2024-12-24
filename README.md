@@ -2,22 +2,6 @@
 
 A simple weather application that allows users to check the current weather conditions for a specific location.
 
-## Table of Contents
-
-- [Weather App](#weather-app)
-  - [Table of Contents](#table-of-contents)
-  - [Demo](#demo)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-  - [Getting Started](#getting-started)
-  - [How to Use](#how-to-use)
-  - [API Key](#api-key)
-
-## Demo
-
-
-
-![Weather App Screenshot](screenshots/screenshot.png)
 
 ## Features
 
@@ -30,8 +14,7 @@ A simple weather application that allows users to check the current weather cond
 - HTML
 - CSS
 - JavaScript
-- https://www.weatherapi.com/docs/
-
+- 
 ## Getting Started
 
 To get a copy of this project up and running on your local machine, follow these steps:
@@ -39,7 +22,7 @@ To get a copy of this project up and running on your local machine, follow these
 1. Clone the repository:
 
     ```bash
-   
+   git clone https://github.com/deepakjadon1902/weather_app.git
     ```
 
 2. Open the project folder:
